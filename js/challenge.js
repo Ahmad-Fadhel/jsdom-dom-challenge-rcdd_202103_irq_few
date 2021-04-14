@@ -39,22 +39,22 @@ let like = () => {
 };
 
 let pause = () => {
-    let btnStatus = "pause"
+    let btnState = "pause"
     let pause = document.getElementById('pause')
     pause.onclick = () => {
-        if (btnStatus === "pause") {
+        if (btnState === "pause") {
             pause.innerText = "resume"
             minus.disabled = true
             plus.disabled = true
             heart.disabled = true
-            btnStatus = "resume"
+            btnState = "resume"
             clearInterval(interval)
-        } else if (btnStatus === "resume") {
+        } else if (btnState === "resume") {
             pause.innerText = "pause"
             minus.disabled = false
             plus.disabled = false
             heart.disabled = false
-            btnStatus = "pause"
+            btnState = "pause"
             timer()
         }
 
