@@ -8,18 +8,18 @@ let timer = () => {
     interval = this.setInterval(() => {
         h1Counter.innerText = parseInt(h1Counter.innerText) + 1
     }, 1000)
-}
+};
 let decrement = () => {
     minus.onclick = () => {
         h1Counter.innerText = parseInt(h1Counter.innerText) - 1
     }
-}
+};
 
 let increment = () => {
     plus.onclick = () => {
         h1Counter.innerText = parseInt(h1Counter.innerText) + 1
     }
-}
+};
 
 let like = () => {
     let counter, likesNumber = 1
@@ -36,7 +36,7 @@ let like = () => {
         likes.appendChild(li)
 
     }
-}
+};
 
 let pause = () => {
     let btnStatus = "pause"
@@ -59,7 +59,7 @@ let pause = () => {
         }
 
     }
-}
+};
 
 let submitForm = (e) => {
     e.preventDefault()
@@ -68,13 +68,13 @@ let submitForm = (e) => {
     p.innerHTML = mssgInput.value
     document.getElementById("list").appendChild(p)
     mssgInput.value = ""
-}
+};
 
-let form = document.getElementById('comment-form')
-form.onsubmit = submitForm
+let form = document.getElementById('comment-form');
+form.onsubmit = submitForm;
 
-timer()
-decrement()
-increment()
-like()
-pause() 
+timer();
+decrement();
+increment();
+like();
+pause(); 
