@@ -1,8 +1,8 @@
-let minus = document.getElementById('minus')
-let h1Counter = document.getElementById('counter')
-let plus = document.getElementById('plus')
-let heart = document.getElementById('heart')
-let interval
+let minus = document.getElementById('minus');
+let h1Counter = document.getElementById('counter');
+let plus = document.getElementById('plus');
+let heart = document.getElementById('heart');
+let interval;
 
 let timer = () => {
     interval = this.setInterval(() => {
