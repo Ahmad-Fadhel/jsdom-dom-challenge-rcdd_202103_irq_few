@@ -33,7 +33,7 @@ let like = () => {
         let li = document.createElement('li')
         li.innerText = h1.innerText + ` has been liked ${likesNumber} time`
         counter = h1.innerText
-        likes.appendChild(h1Counter)
+        likes.appendChild(h1)
 
     }
 }
