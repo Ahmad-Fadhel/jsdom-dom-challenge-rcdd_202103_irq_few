@@ -17,7 +17,7 @@ let decrement = () => {
 
 let increment = () => {
     plus.onclick = () => {
-        h1.innerText = parseInt(h1Counter.innerText) + 1
+        h1Counter.innerText = parseInt(h1Counter.innerText) + 1
     }
 }
 
