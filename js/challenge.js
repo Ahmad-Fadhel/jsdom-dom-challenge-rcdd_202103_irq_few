@@ -24,16 +24,16 @@ let increment = () => {
 let like = () => {
     let counter, likesNumber = 1
     heart.onclick = () => {
-        if (h1.innerText == counter) {
+        if (h1Counter.innerText == counter) {
             likesNumber = likesNumber + 1
         } else {
             likesNumber = 1
         }
         let likes = document.getElementsByTagName('ul')[0]
         let li = document.createElement('li')
-        li.innerText = h1.innerText + ` has been liked ${likesNumber} time`
-        counter = h1.innerText
-        likes.appendChild(h1)
+        li.innerText = h1Counter.innerText + ` has been liked ${likesNumber} time`
+        counter = h1Counter.innerText
+        likes.appendChild(h1Counter)
 
     }
 }
