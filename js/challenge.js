@@ -6,12 +6,12 @@ let interval
 
 let timer = () => {
     interval = this.setInterval(() => {
-        h1.innerText = parseInt(h1Counter.innerText) + 1
+        h1Counter.innerText = parseInt(h1Counter.innerText) + 1
     }, 1000)
 }
 let decrement = () => {
     minus.onclick = () => {
-        h1.innerText = parseInt(h1Counter.innerText) - 1
+        h1Counter.innerText = parseInt(h1Counter.innerText) - 1
     }
 }
 
