@@ -69,6 +69,7 @@ let submitForm = (e) => {
     document.getElementById("list").appendChild(p)
     mssgInput.value = ""
 }
+
 let form = document.getElementById('comment-form')
 form.onsubmit = submitForm
 
